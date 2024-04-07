@@ -1,2 +1,2 @@
 #!/bin/bash
- find $PATH -maxdepth 1 -mindepth 1 ! -print0 | xargs -0 -I {} sh -c 'echo .' | wc -l
+echo $PATH |tr -c -d '/' |wc -c 
