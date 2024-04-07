@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH |tr -c -d '/' |wc -c 
+echo $(( $(echo $PATH |tr -d '/' |wc -c )-1 )) 
