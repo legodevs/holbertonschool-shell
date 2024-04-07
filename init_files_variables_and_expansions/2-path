@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | sort | tail -n3
+echo $PATH:/action
